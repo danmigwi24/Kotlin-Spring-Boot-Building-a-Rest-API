@@ -28,6 +28,10 @@ dependencies {
 	runtimeOnly("com.mysql:mysql-connector-j")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
+
+	implementation ("org.springframework.boot:spring-boot-starter-security")
+	implementation ("org.springframework.security:spring-security-oauth2-resource-server")
+	implementation ("org.springframework.security:spring-security-oauth2-jose")
 }
 
 tasks.withType<KotlinCompile> {
